@@ -1,0 +1,56 @@
+body {
+  background-color: hsla(0, 0%, 0%, 1);
+  background-image:
+    radial-gradient(at 52% 29%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 68% 39%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+    radial-gradient(at 20% 27%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+    radial-gradient(at 66% 70%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 38% 59%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 99% 90%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 35% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.stopWatchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.stopWatch {
+  text-align: center;
+  background-color: rgba(240, 240, 240, 0.24);
+  padding: 20px;
+  border-radius: 40px;
+  max-width: 80%;
+}
+
+.stopWatch button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28c42d;
+  /* Green */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stopWatch button:hover {
+  background-color: #45a049;
+  /* Darker green */
+}
+
+.stopWatch button:disabled {
+  background-color: #ccc;
+  /* Gray */
+  cursor: not-allowed;
+}
+
+.stopWatch button:disabled:hover {
+  background-color: #ccc;
+  /* Gray */
+}
